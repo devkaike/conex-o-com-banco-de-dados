@@ -1,0 +1,19 @@
+-- Table: public.nome
+
+-- DROP TABLE public.nome;
+
+CREATE TABLE public.nome
+(
+    nome character varying COLLATE pg_catalog."default" NOT NULL,
+    palpite1 integer,
+    palpite2 integer,
+    palpite3 integer,
+    palpite4 integer
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.nome
+    OWNER to postgres;
